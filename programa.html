@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+ 
+<script>
+
+	function pulaLinha() {
+		document.write("<br>")
+	};
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	} // melhor do que ficar escrevendo document.write o tempo todo
+
+	var ano = 2023;
+
+	mostra("A idade de Vitória é de " +(ano-1998)+ " anos");
+
+	mostra("A idade da Antonia é " + (25+8));
+
+	var media =  (200 + 100 + 300 + 400.5) / 4;
+	mostra("A média do valor gasto com as viagens é: " + media)
+	mostra( "Arredondando, a média do valor gasto com as viagens é: " + Math.round(media));   
+</script>

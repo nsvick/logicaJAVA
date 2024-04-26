@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+function sorteia(numero) { 
+	return Math.round(Math.random() * numero);}
+
+var numeroPensado = sorteia(100); // deixei número inteiro
+tentativa = 1
+
+while(tentativa <=3){
+	var chute = parseInt(prompt("Me diga um número: "));
+	if (chute == numeroPensado) { 
+		alert("Parabéns, você acertou!");
+		break;}
+	else 
+		{if(chute < numeroPensado)
+			{alert("O seu chute é menor que o número pensado.");}
+	else {
+		alert("O seu chute é maior que o número pensado")}}
+	tentativa++;
+}
+	
+
+mostra("O número pensado foi "+ numeroPensado)
+</script>
